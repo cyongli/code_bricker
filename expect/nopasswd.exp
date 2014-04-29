@@ -1,0 +1,9 @@
+#!/usr/bin/expect -f
+set ip localhost
+set password hadoop
+spawn ssh chaoyli@$ip
+expect {
+    "*yes/no" { send "yes\r";exp_continue}
+    "*password:" { send "$password\r"}
+}
+interact

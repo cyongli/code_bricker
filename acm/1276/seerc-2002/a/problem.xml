@@ -1,0 +1,13 @@
+<problem
+    id               = "A"
+    contest          = "SEERC - 2002"
+
+    problem-type     = "ACM-ICPC"
+    test-count       = "1"
+    input-mask       = "%02d.in"
+    output-mask      = "%02d.out"
+    time-limit       = "2000"
+    memory-limit     = "64M"
+    checker          = "@STR"
+    judge-solution   = "1.cpp"
+/>

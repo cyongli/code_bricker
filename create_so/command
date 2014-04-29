@@ -1,0 +1,4 @@
+gcc -fPIC -c ctest1.c ctest2.c
+gcc -shared -o libctest.so ctest1.o ctest2.o
+gcc -L/home/chaoyli/freecode/createsharedobject prog.c -lctest -o prog
+export LD_LIBRARY_PATH=/home/chaoyli/freecode/createsharedobject/

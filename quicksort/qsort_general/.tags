@@ -1,0 +1,59 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+MAX_THRESH	glibcqsort.c	44;"	d	file:
+MAX_THRESH	quicksort.c	9;"	d	file:
+MAX_THRESH	quicksortfaster.c	9;"	d	file:
+MAX_THRESH	quicksortfastest.c	6;"	d	file:
+POP	glibcqsort.c	60;"	d	file:
+POP	quicksort.c	12;"	d	file:
+POP	quicksortfaster.c	12;"	d	file:
+POP	quicksortfastest.c	9;"	d	file:
+PUSH	glibcqsort.c	59;"	d	file:
+PUSH	quicksort.c	11;"	d	file:
+PUSH	quicksortfaster.c	11;"	d	file:
+PUSH	quicksortfastest.c	8;"	d	file:
+STACK_NOT_EMPTY	glibcqsort.c	61;"	d	file:
+STACK_NOT_EMPTY	quicksort.c	13;"	d	file:
+STACK_NOT_EMPTY	quicksortfaster.c	13;"	d	file:
+STACK_NOT_EMPTY	quicksortfastest.c	10;"	d	file:
+STACK_SIZE	glibcqsort.c	58;"	d	file:
+STACK_SIZE	quicksort.c	10;"	d	file:
+STACK_SIZE	quicksortfaster.c	10;"	d	file:
+STACK_SIZE	quicksortfastest.c	7;"	d	file:
+SWAP	glibcqsort.c	29;"	d	file:
+__compar_d_fn_t	glibcqsort.c	/^typedef (*__compar_d_fn_t) (const void*,const void*);$/;"	t	file:
+__compar_fn_t	quicksort.c	/^typedef int (*__compar_fn_t) (const void* ,const void* ); $/;"	t	file:
+__compar_fn_t	quicksortfaster.c	/^typedef int (*__compar_fn_t) (const void* ,const void* ); $/;"	t	file:
+__compar_fn_t	quicksortfastest.c	/^typedef int (*__compar_fn_t) (const void* ,const void* ); $/;"	t	file:
+compare	doublesort.c	/^int compare(const void* a,const void* b){$/;"	f
+compare	intsort.c	/^inline int compare(const void*a, const void*b){$/;"	f
+compare	stringsort.c	/^int compare(const void* a,const void* b){$/;"	f
+hi	glibcqsort.c	/^    char *hi;$/;"	m	struct:__anon3	file:
+hi	quicksort.c	/^  char* lo; char* hi;$/;"	m	struct:__anon2	file:
+hi	quicksortfaster.c	/^  char* lo; char* hi;$/;"	m	struct:__anon4	file:
+hi	quicksortfastest.c	/^  char* lo; char* hi;$/;"	m	struct:__anon1	file:
+lo	glibcqsort.c	/^    char *lo;$/;"	m	struct:__anon3	file:
+lo	quicksort.c	/^  char* lo; char* hi;$/;"	m	struct:__anon2	file:
+lo	quicksortfaster.c	/^  char* lo; char* hi;$/;"	m	struct:__anon4	file:
+lo	quicksortfastest.c	/^  char* lo; char* hi;$/;"	m	struct:__anon1	file:
+main	doublesort.c	/^int main(int argc,char*argv[]){$/;"	f
+main	intsort.c	/^int main(int argc,char* argv[]){$/;"	f
+main	stringsort.c	/^int main(int argc,char* argv[]){$/;"	f
+min	glibcqsort.c	203;"	d	file:
+min	quicksortfaster.c	102;"	d	file:
+min	quicksortfastest.c	98;"	d	file:
+quicksort	glibcqsort.c	/^quicksort (void *const pbase, size_t total_elems, size_t size,$/;"	f
+quicksort	quicksort.c	/^void quicksort(arr,total_elems,size,cmp)$/;"	f
+quicksort	quicksortfaster.c	/^void quicksort(arr,total_elems,size,cmp)$/;"	f
+quicksort	quicksortfastest.c	/^void quicksort(arr,total_elems,size,cmp)$/;"	f
+stack_node	glibcqsort.c	/^  } stack_node;$/;"	t	typeref:struct:__anon3	file:
+stack_node	quicksort.c	/^}stack_node;$/;"	t	typeref:struct:__anon2	file:
+stack_node	quicksortfaster.c	/^}stack_node;$/;"	t	typeref:struct:__anon4	file:
+stack_node	quicksortfastest.c	/^}stack_node;$/;"	t	typeref:struct:__anon1	file:
+swap	quicksort.c	/^inline void swap(char* __a,char* __b,size_t size){$/;"	f
+swap	quicksortfaster.c	/^inline void swap(char* __a,char* __b,size_t size){$/;"	f
+swap	quicksortfastest.c	/^inline void swap(char* __a,char* __b,size_t size){$/;"	f

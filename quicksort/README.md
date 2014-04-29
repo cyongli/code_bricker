@@ -1,0 +1,11 @@
+此项目的目的是为了模仿glibc的quicksort算法，写一个性能和它相似的算法
+
+使用的库函数尽量都是去掉了分页优化的库文件
+quicksort的优化方式主要有一下几种：
+1.采用median_of_three寻找pivot
+2.当排序的数目比较小时使用插入排序
+3.不再使用递归算法
+4.较大的分区首先插入stack中
+
+qsort_int_sort文件对比的是库函数和int型quicksort的对比
+qsort_general对比的是不同版本的通用quicksort和系统库函数性能的对比
