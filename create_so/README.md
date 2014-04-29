@@ -1,0 +1,2 @@
+此程序的目的是为了在linux下创建sharedobject
+遵照command中的命令执行即可
