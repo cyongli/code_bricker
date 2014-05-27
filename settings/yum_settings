@@ -1,0 +1,15 @@
+1.删除原有的yum
+  rpm -aq | grep yum | xargs rpm -e --nodeps
+2.下载yum安装文件
+  yum-*.el6.centos.noarch.rpm
+  yum-metadata-parser*.rpm
+  yum-plugin-fastestmirror*.rpm
+  python-iniparse-*.rpm
+3.进行安装
+  rpm -ivh python-iniparse*.rpm
+  rpm -ivh yum-metadata-parser*.rpm
+  rpm -ivh yum-*.el6.noarch.rmp yum-plugin-fastestmirror-*-.rpm
+　最后两个rpm需要一起安装,否则会产生相互依赖的问题
+4.将local.repo加入/etc/yum.repos.d(我们此时用的163的源)
+  执行yum clean all
+      yum makecache
