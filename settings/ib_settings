@@ -1,0 +1,6 @@
+此文档是关于ib卡的设置(redhat6.2)
+/etc/sysconfig/network-scripts/ifcfg-ib0
+sudo /etc/init.d/openibd start
+sudo /etc/init.d/opensmd start
+设置IPoIB后需要重启网络服务，否则会冲掉/etc/resolv.conf配置的dns信息
+执行sudo service network restart就可以重启了
