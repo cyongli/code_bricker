@@ -1,0 +1,4 @@
+ntpdate与服务器进行对时
+hwclock将时间写入bios
+ntpdate serverName
+hwclock -w
