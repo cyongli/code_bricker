@@ -1,16 +1,3 @@
-/*
-题意:每一个字母对应一个数字,
-     A -> 1
-     B -> 2
-     ...
-     Z -> 26
-给定一个数字序列，求编码的总数
-解法1:dfs
-解法2:F(n) = F(n-1)+F(n-2), if substr(n-1,n-2),substr(n,n-1)都在序列中
-      F(n) = 2*F(n-1), if substr(n,n-1)在序列中,substr(n-1,n-2)不在序列中
-      F(n) = F(n-2),if substr(n-1,n-2),substr(n,n-1)都在序列中且a[n]=0
-      F(n) = F(n-1）, if substr(n,n-1)在序列中,substr(n-1,n-2)不在序列中且a[n]=0
-*/
 #include<iostream>
 #include<string>
 using namespace std;
@@ -54,4 +41,3 @@ int main(int argc, char *argv[]){
 	cout << sol.numDecodings(s) << endl;
 	return 0;
 }
-
