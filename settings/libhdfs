@@ -2,7 +2,7 @@ libhdfs是hadoop为C/C++访问分布式文件系统提供的JNI接口。
 此文档配置的机器是redhat 6.2
 1.动态链接库的配置
 　在/etc/ld.so.conf.d/中加入hdfs.conf
-  在hdfs.conf中输入$JAVA/home/jie/lib/amd64/server
+  在hdfs.conf中输入$JAVA_HOME/jie/lib/amd64/server
                    $HADOOP_PREFIX/c++/Linux-amd64-64/lib
   保存退出后执行ldconfig -v
 
