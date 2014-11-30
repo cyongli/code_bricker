@@ -7,7 +7,7 @@ libhdfs是hadoop为C/C++访问分布式文件系统提供的JNI接口。
   把libhdfs.so.0.0.0复制到/usr/lib64/libhdfs.so.0.0.0
   保存退出后执行ldconfig -v
 
-2.在/etc/profile或者.profile中加入
+2.在.bash_profile或者.profile中加入
   for i in $HADOOP_PREFIE/*.jar
   do 
      CLASSPATH=$CLASSPATH:$i
