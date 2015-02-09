@@ -1,13 +1,9 @@
 #!/usr/bin/expect -f
-set passwd [lindex $argv 0]
 spawn ssh-keygen
 expect {
   "*yes/no*" {
      send "yes\r"
      exp_continue
-  } "*password*" {
-    send "$passwd\r"
-    exp_continue
   } "*file" {
     send "\n"
     exp_continue
@@ -23,5 +19,4 @@ expect {
   } eof {
     exit
   }
-   
 }
