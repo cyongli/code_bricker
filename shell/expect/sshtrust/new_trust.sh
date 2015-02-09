@@ -16,8 +16,13 @@ then
 fi
 
 path=$1
-passwd=$2
-./gen_key.exp $passwd
+stty -echo
+echo -n "Enter password:" 
+read passwd 
+stty echo
+echo
+
+./gen_key.exp
 cat $path/.ssh/id_rsa.pub >> $path/.ssh/authorized_keys
 chmod 600 $path/.ssh/authorized_keys
 
