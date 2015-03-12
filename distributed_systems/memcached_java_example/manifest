@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Main-Class: MemcachedJava 
+Class-Path: spymemcached-2.10.2.jar
