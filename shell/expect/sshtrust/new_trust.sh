@@ -2,15 +2,14 @@
 
 showUsage(){
 	echo "Usage:"
-	echo -e "\ttrust.sh path  passwd"
+	echo -e "\tnew_trust.sh path"
 	echo "Note:"
         echo -e "\tpath is the location where .ssh is"
-	echo -e "\tpasswd is password of current user"
 }
 
 if [ $# -lt 1 ] 
 then
-	echo "Error:no path or passwd defined"
+	echo "Error:no path defined"
 	showUsage
 	exit
 fi
