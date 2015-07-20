@@ -1,7 +1,7 @@
 
 #file one.py
 
-def func():
+def main():
     print("func() in one.py")
 
 print("top-level in one.py")
