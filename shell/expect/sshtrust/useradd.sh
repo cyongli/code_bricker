@@ -21,5 +21,5 @@ echo
 passwd=$(perl -e 'print crypt($ARGV[0], "wtf")' "$word")
 for host in $(cat hosts)
 do
-	useradd -d /home/$username -p $passwd $username
+	ssh $host useradd -d /home/$username -p $passwd $username
 done
