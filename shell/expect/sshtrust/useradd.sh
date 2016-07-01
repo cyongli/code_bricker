@@ -5,6 +5,13 @@ showUsage(){
 	echo -e "\tuseradd.sh username"
 }
 
+if [ $# -lt 1 ]
+then
+	echo "Error:no path defined"
+	showUsage
+	exit
+fi
+
 username=$1
 stty -echo
 echo -n "Enter password:" 
