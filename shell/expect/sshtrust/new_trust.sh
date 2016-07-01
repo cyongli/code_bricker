@@ -4,7 +4,7 @@ showUsage(){
 	echo "Usage:"
 	echo -e "\tnew_trust.sh path"
 	echo "Note:"
-        echo -e "\tpath is the location where .ssh is"
+        echo -e "\tpath is the location where home of username is"
 }
 
 if [ $# -lt 1 ] 
