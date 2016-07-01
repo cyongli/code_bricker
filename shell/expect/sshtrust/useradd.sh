@@ -12,4 +12,7 @@ read word
 stty echo
 echo
 passwd=$(perl -e 'print crypt($ARGV[0], "wtf")' "$word")
-useradd -d /home/$username -p $passwd $username
+for host in $(cat hosts)
+do
+	useradd -d /home/$username -p $passwd $username
+done
