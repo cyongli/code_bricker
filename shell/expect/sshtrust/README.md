@@ -18,3 +18,6 @@
 
 3.运行new_trush.sh
 ./new_trush.sh home_of_username 
+
+4.如果是新加机器,就不需要新生成密钥对。
+  需要注释掉new_trust.sh的生成密钥对的代码。
