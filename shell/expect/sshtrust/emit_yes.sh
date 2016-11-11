@@ -4,6 +4,6 @@ for host in `cat hosts`
 do
    if [ $host != `hostname` ]
    then
-      ./emit_yes.exp $host $passwd
+      ./emit_yes.exp $host
    fi
 done
