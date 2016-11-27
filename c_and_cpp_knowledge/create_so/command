@@ -1,3 +1,0 @@
-gcc -o libctest.so -shared -fPIC ctest1.c ctest2.c
-gcc prog.c -o prog -L. -lctest
-export LD_LIBRARY_PATH=.
